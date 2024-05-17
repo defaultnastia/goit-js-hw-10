@@ -5,9 +5,36 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Snackbar</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <p class="back-link"><a href="./index.html">Go back</a></p>
+    <div class="form-box">
+      <form class="form">
+        <label class="delay-box">
+          Delay (ms)
+          <input type="number" name="delay" required />
+        </label>
+        <fieldset>
+          <legend>State</legend>
+          <label>
+            <input type="radio" name="state" value="fulfilled" required />
+            Fulfilled
+          </label>
+          <label>
+            <input type="radio" name="state" value="rejected" required />
+            Rejected
+          </label>
+        </fieldset>
+        <button class="common-button" type="submit">Create notification</button>
+      </form>
+    </div>
+
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
 </html>

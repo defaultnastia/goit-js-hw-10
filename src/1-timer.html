@@ -5,13 +5,27 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>Timer</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <p class="back-link"><a href="./index.html">Go back</a></p>
     <div class="timer-box">
       <div class="picker-box">
         <input type="text" id="datetime-picker" />
-        <button id="start-btn" type="button" data-start disabled>Start</button>
+        <button
+          id="start-btn"
+          class="common-button"
+          type="button"
+          data-start
+          disabled
+        >
+          Start
+        </button>
       </div>
       <div class="timer">
         <div class="field">
