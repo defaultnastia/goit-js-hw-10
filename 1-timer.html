@@ -5,18 +5,32 @@
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-10/favicon.svg" />
     <title>Timer</title>
     
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js">
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-ceb9b81e.js">
     <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-1eb1cd71.css">
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-3f9fdaa4.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-ae994d5c.css">
   </head>
   <body>
     <p class="back-link"><a href="./index.html">Go back</a></p>
     <div class="timer-box">
       <div class="picker-box">
         <input type="text" id="datetime-picker" />
-        <button id="start-btn" type="button" data-start disabled>Start</button>
+        <button
+          id="start-btn"
+          class="common-button"
+          type="button"
+          data-start
+          disabled
+        >
+          Start
+        </button>
       </div>
       <div class="timer">
         <div class="field">
