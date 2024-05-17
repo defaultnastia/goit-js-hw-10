@@ -1,25 +1,177 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
-
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
   font-weight: 400;
+  letter-spacing: 0.03em;
 
   color: #242424;
   background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.back-link {
+  position: absolute;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-left: 24px;
+  margin-top: 24px;
+}
+
+.back-link a::before {
+  content: '←  ';
+  font-size: 20px;
+}
+
+/* #region INDEX */
+.index-body {
+  min-height: 100vh;
+  background-image: url('../img/streetfighter.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.index-menu-box {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: aliceblue;
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+.index-menu {
+  display: flex;
+  gap: 150px;
+}
+
+.index-menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  font-size: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-transform: uppercase;
+}
+
+#timer {
+  background-image: url('../img/women-burning-things.gif');
+}
+
+#snackbar {
+  background-image: url('../img/it-crowd.gif');
+}
+/* #endregion INDEX */
+
+/* #region TIMER */
+
+.timer-box {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.picker-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  width: 500px;
+}
+
+#datetime-picker {
+  flex-grow: 5;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 24px;
+  letter-spacing: 0.03em;
+}
+
+#datetime-picker:focus {
+  outline: none;
+  border-color: rgba(78, 117, 255, 1);
+}
+
+#datetime-picker:disabled {
+  cursor: auto;
+}
+
+.picker-box button {
+  padding: 16px;
+  font-size: 24px;
+  border-style: none;
+  border-radius: 8px;
+  color: #fff;
+  background-color: rgba(78, 117, 255, 1);
+  flex-grow: 1;
+}
+
+.picker-box button:disabled,
+.picker-box button:disabled:hover {
+  color: rgba(152, 152, 152, 1);
+  background-color: rgba(207, 207, 207, 1);
+  cursor: auto;
+}
+
+.picker-box button:hover {
+  color: #fff;
+  background-color: rgba(108, 140, 255, 1);
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+  font-size: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.value {
+  font-size: 48px;
+}
+
+.label {
+  text-transform: uppercase;
+}
+
+/* #endregion TIMER */
+
+/* #region SNACKBAR */
+/* #endregion SNACKBAR */
